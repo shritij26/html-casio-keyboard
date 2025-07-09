@@ -24,7 +24,7 @@ document.addEventListener('keydown', function (event) {
     var audio;
 
     if ('sdfghjkzxcvbnm'.includes(key)) {
-        audio = new Audio('music/' + key + '4.mp3');
+        audio = new Audio('music/' + key + '4.wav');
     } else if ('wertyui'.includes(key)) {
         audio = new Audio('music/' + key + '4.mp3');
     }
