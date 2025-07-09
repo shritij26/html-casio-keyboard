@@ -3,7 +3,7 @@ var whiteKeys = document.querySelectorAll('.white-key').length;
 
 for (var i = 0; i < blackKeys; i++) {
     document.querySelectorAll('.black-key')[i].addEventListener('click', function () {
-        var audio = new Audio('music/' + this.textContent + '4.mp3');
+        var audio = new Audio('music/' + this.textContent + '4.wav');
         audio.play();
         this.classList.add('pressed');
         setTimeout(() => this.classList.remove('pressed'), 100);
@@ -12,7 +12,7 @@ for (var i = 0; i < blackKeys; i++) {
 
 for (var i = 0; i < whiteKeys; i++) {
     document.querySelectorAll('.white-key')[i].addEventListener('click', function () {
-        var audio = new Audio('music/' + this.textContent + '4.mp3');
+        var audio = new Audio('music/' + this.textContent + '4.wav');
         audio.play();
         this.classList.add('pressed');
         setTimeout(() => this.classList.remove('pressed'), 100);
@@ -26,7 +26,7 @@ document.addEventListener('keydown', function (event) {
     if ('sdfghjkzxcvbnm'.includes(key)) {
         audio = new Audio('music/' + key + '4.wav');
     } else if ('wertyui'.includes(key)) {
-        audio = new Audio('music/' + key + '4.mp3');
+        audio = new Audio('music/' + key + '4.wav');
     }
 
     if (audio) {
